@@ -1,0 +1,132 @@
+.container-activity-6 {
+    height: calc(100vh - 80px);
+    margin: 0px;
+    overflow-y: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px !important;
+    background-color: #f8f8f8;
+    padding: 30px 10vw 30px 10vw !important;
+    font-family: "Lato", sans-serif !important;
+}
+
+.header-activity-6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-activity-6 h2 {
+    min-height: 1 !important;
+    border-right: solid rgba(0, 0, 0, 0) 1px !important;
+    outline: none !important;
+    font-family: "Lato", sans-serif !important;
+}
+
+.editable-label,
+.editable-instruction {
+    min-height: 1;
+    border-right: solid rgba(0, 0, 0, 0) 1px;
+    outline: none;
+    font-family: "Lato", sans-serif !important;
+}
+
+.clusters-header-container {
+    display: flex !important;
+    width: 100% !important;
+    justify-content: space-around !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    border-radius: 20px;
+    padding: 15px 0px 15px 0px;
+    border: 1px solid #af5f02 !important;
+}
+
+.clusters-header {
+    font-family: "Lato", sans-serif !important;
+    font-size: 17px !important;
+}
+
+.cluster-details-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cluster-accordian {
+    border-radius: 10px !important;
+    box-shadow: none !important;
+}
+
+.cluster-accordian-header {
+    background-color: #E6E6FA !important;
+    border-radius: 10px !important;
+    padding: 5px 15px 5px 15px !important;
+}
+
+.cluster-accordian-label {
+    font-family: "Lato", sans-serif !important;
+    font-size: 17px !important;
+}
+
+.cluster-accordian-content {
+    border-radius: 15px;
+    margin: 20px;
+    font-family: "Lato", sans-serif !important;
+    font-size: 17px;
+}
+
+.cluster-button {
+    padding: 10px !important;
+    min-width: 0px !important;
+    margin-left: 15px !important;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50% !important;
+    text-align: center !important;
+}
+
+.cluster-accordian-insight, .cluster-accordian-need {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0px 10px 10px 10px;
+}
+
+.cluster-accordian-insight {
+    background-color: #6699CC;
+}
+
+.cluster-accordian-need {
+    background-color: #008080;
+}
+
+.cluster-accordian-insight-text, .cluster-accordian-need-text {
+    font-family: "Lato", sans-serif !important;
+    font-size: 17px !important;
+    outline: none;
+}
+
+.submit-button {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.reset-button {
+    margin-left: auto;
+}
+
+.reset-button:hover {
+    background-color: transparent;
+}
+
+.info-text {
+    min-height: 1;
+    border-right: solid rgba(0, 0, 0, 0) 1px;
+    outline: none;
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+    margin-top: 10px;
+}

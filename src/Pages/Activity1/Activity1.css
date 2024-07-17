@@ -1,0 +1,88 @@
+.container-activity-1 {
+    height: calc(100vh - 80px);
+    margin: 0px;
+    overflow-y: auto;
+    width: 100%;
+    box-sizing: border-box; 
+    padding: 0px !important;
+    background-color: #f8f8f8;
+    padding: 30px 10vw 30px 10vw !important;
+    font-family: "Lato", sans-serif !important;
+}
+
+.header-activity-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-activity-1 h2 {
+    min-height: 1;
+    border-right: solid rgba(0, 0, 0, 0) 1px;
+    outline: none;
+    font-family: "Lato", sans-serif !important;
+}
+
+.reset-btn {
+    color: #af5f02 !important;
+}
+
+.reset-btn:hover {
+    background-color: transparent !important;
+}
+
+.instructions {
+    min-height: 1;
+    border-right: solid rgba(0, 0, 0, 0) 1px;
+    outline: none;
+    font-size: 17px !important;
+    font-family: "Lato", sans-serif !important;
+}
+
+.switch-label {
+    margin-top: 10px;
+}
+
+button.preview-btn,
+button.submit-btn {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.submit-btn {
+    background-color: rgba(135,146,137,255) !important;
+    color: whitesmoke !important;
+    border: none !important;
+}
+
+.preview-box {
+    margin-top: 3px;
+    padding: 20px;
+    border: 1px solid #b57f3f;
+    border-radius: 10px;
+    font-family: "Lato", sans-serif !important;
+}
+
+.error-text,
+.helper-text {
+    margin-top: 3px;
+}
+
+.text-field-activity-1 .MuiInputLabel-root {
+    color: grey !important; 
+  }
+
+.text-field-activity-1 .MuiOutlinedInput-notchedOutline {
+    border-color: #b57f3f;
+    border-radius: 10px; 
+
+}
+
+.text-field-activity-1 .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #af5f02;
+  }
+
+.text-field-activity-1 .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #af5f02;
+}

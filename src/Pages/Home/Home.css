@@ -1,0 +1,78 @@
+.container {
+    height: calc(100vh - 80px);
+    margin: 0px;
+    width: 100% !important;
+    box-sizing: border-box !important;  
+    padding: 0px !important;
+}
+
+.welcome-container {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%; 
+    background-color: black;
+
+}
+
+.welcome-container-top-section {
+    height: 65%;
+    background-image: url('Lightblub-background-cropped.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 900px;
+}
+
+.welcome-container-bottom-section {
+    height: 35%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-container-bottom-section-title {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 80px;
+    align-self: center;
+}
+
+.welcome-container-bottom-section-sub-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 35px;
+    align-self: center;
+}
+
+.welcome-title {
+    font-size: 200px !important; 
+    font-family: "Rubik Glitch Pop", system-ui !important;
+    color: whitesmoke !important;
+}
+
+.welcome-message {
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 25px !important;
+    font-family: "Bebas Neue", sans-serif !important;
+}
+
+.grid-area {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 100%);
+    pointer-events: none; 
+}

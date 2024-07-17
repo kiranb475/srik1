@@ -1,0 +1,220 @@
+.container {
+    height: calc(100vh - 80px);
+    margin: 0px;
+    overflow-y: auto;
+    width: 100%;
+    box-sizing: border-box; 
+    padding: 0px !important;
+    background-color: #f8f8f8;
+}
+
+.custom-activities-container {
+    width: 100%;
+    padding: 30px 100px 30px 100px;
+    margin: 0px;
+    box-sizing: border-box; 
+}
+
+.custom-activities-blank {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: grey;
+    font-size: 20px;
+}
+
+.create-template-button {
+    margin-top: 40px !important;
+    margin-bottom: 0px !important;
+    background-color: #c8bea0 !important;
+    color: #50352a !important;
+    border: none !important;
+    height: 50px;
+    border-radius: 0px !important;
+}
+
+.create-template-button:hover {
+    background-color: #b0a690 !important;
+}
+
+.custom-activities-title {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    font-family: "DM Serif Display", serif !important;
+    font-size: 30px !important;
+    color: #af5f02;
+}
+
+.custom-activities {
+    display: flex !important;
+    padding: 15px !important;
+    background-color: #E6E6FA !important;
+    border-radius: 8px !important;
+    flex-direction: row !important;
+    margin-bottom: 10px;
+}
+
+.other-activities {
+    display: flex !important;
+    padding: 15px !important;
+    background-color: #C7E6F4 !important;
+    border-radius: 8px !important;
+    flex-direction: row !important;
+    margin-bottom: 10px;
+}
+
+.dialog-delete-header {
+    padding-bottom: 10px !important;
+    background-color: rgba(135,146,137,255);    
+}
+
+.dialog-delete-title {
+    font-family: "Lato", sans-serif !important;
+    font-size: 20px !important;
+}
+
+
+.activity-title {
+    font-family: "Lato", sans-serif !important;
+    font-size: 20px !important;
+}
+
+.activity-sub-title {
+    font-family: "Lato", sans-serif !important;
+    font-size: 20px !important;
+}
+
+.activity-author {
+    margin-left: 10px !important;
+}
+
+.activity-container {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.activity-buttons {
+    margin-left: auto !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.separator {
+    color: #2e82d6 !important;
+    margin: 0 2px !important;
+}
+
+.accordion {
+    width: 100% !important;
+    border-radius: 8px !important;
+    box-shadow: none !important;
+}
+
+.accordian-details {
+    background-color: #f8f8f8 !important;
+}
+
+.activity-accordion {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    width: 100% !important;
+}
+
+.accordion-summary {
+    font-family: "Lato", sans-serif !important;
+    font-size: 20px !important;
+    background-color: #e8e4fc !important;
+    border-radius: 8px !important;
+    padding: 5px 16px 5px 16px !important;
+    box-shadow: none !important;;
+}
+
+.start-activity-button {
+    margin-left: auto !important;
+}
+
+.alert-warning {
+    margin-bottom: 20px !important;
+}
+
+.activity-header-section {
+    display: flex;
+    width: 100%;
+}
+
+.activity-section-title {
+    font-family: "Lato", sans-serif !important;
+    font-size: 20px !important;
+    margin-bottom: 10px !important;
+
+}
+
+.activity-button.active {
+    color: green;
+    margin-left: auto;
+}
+
+.activity-button.disabled {
+    color: grey;
+    margin-left: auto;
+}
+
+.editable-label {
+    min-height: 1px !important;
+    border-right: solid rgba(0,0,0,0) 1px !important;
+    outline: none !important;
+    font-family: "Lato", sans-serif !important;
+    font-size: 17px !important;
+}
+
+.editable-instruction {
+    min-height: 1px !important;
+    border-right: solid rgba(0,0,0,0) 1px !important;
+    outline: none !important;
+    font-family: "Lato", sans-serif !important;
+    font-size: 17px !important;
+    margin-top: 15px !important
+}
+
+.activity-sub-section {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-top: 10px !important;
+}
+
+.activity-info-text {
+    margin-top: 15px !important;
+    margin-bottom: 10px !important;
+    font-family: "Lato", sans-serif !important;
+    font-size: 17px !important;
+}
+
+.activity-switch {
+    margin-top: 0px !important;
+    margin-bottom: 15px !important;
+}
+
+.activity-divider {
+    margin-bottom: 15px !important;
+}
+
+.activity-submit-button {
+    margin-top: 20px !important;
+}
+
+.copy-template-button, .copy-template-loading {
+    margin-left: auto !important;
+}
+
+.update-template-loading {
+    margin-top: 20px;
+}
+
+.activity-button-delete {
+    color: lightcoral !important;
+}
+
+.delete-template-loading {
+    margin: 0px 15px 0px 15px !important;
+}

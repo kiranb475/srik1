@@ -1,0 +1,70 @@
+.container-activity-2 {
+  height: calc(100vh - 80px);
+  margin: 0px;
+  overflow-y: auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px !important;
+  background-color: #f8f8f8;
+  padding: 30px 10vw 30px 10vw !important;
+  font-family: "Lato", sans-serif !important;
+}
+
+.header-activity-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-activity-2 h2 {
+  min-height: 1 !important;
+  border-right: solid rgba(0, 0, 0, 0) 1px !important;
+  outline: none !important;
+  font-family: "Lato", sans-serif !important;
+}
+
+.reset-button {
+  margin-left: auto !important;
+  color: #af5f02 !important;
+}
+
+.reset-button .MuiButtonBase-root:hover {
+  background-color: transparent !important;
+}
+
+/* can be abstracted */
+.editable-instruction {
+  min-height: 1 !important;
+  border-right: solid rgba(0, 0, 0, 0) 1px !important;
+  outline: none !important;
+  font-size: 17px !important;
+  font-family: "Lato", sans-serif !important;
+}
+
+.divider,
+.formControlLabel,
+.info-text {
+  margin-top: 10px !important;
+}
+
+.info-text {
+  font-family: "Lato", sans-serif !important;
+  font-size: 17px !important;
+}
+
+.content-container {
+  margin-top: 10px !important;
+  padding: 10px !important;
+  border: 1px solid #af5f02 !important;
+  border-radius: 10px !important;
+
+}
+
+.submit-button {
+  margin-top: 20px !important;
+  margin-bottom: 3px !important;
+  background-color: rgba(135, 146, 137, 255) !important;
+  color: whitesmoke !important;
+  border: none !important;
+}

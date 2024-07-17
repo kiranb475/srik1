@@ -1,0 +1,85 @@
+
+The code below was an attempt to move multiple items collectively - failed
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+const findKeyById = (id, content) => {
+    for (const [key, value] of Object.entries(content)) {
+        if (value.response_text) {
+            for (const [subKey, value2] of Object.entries(value.response_text)) {
+                if (value2.clusterData && value2.clusterData.id === id) {
+                    console.log({ key, subKey });
+                    return { key, subKey };
+                }
+            }
+        }
+    }
+    return null; 
+};
+
+const handleDrag = (e, data, coreKey, subKey) => {
+    checkClustering();  // Assuming this is necessary prior to updating positions
+
+    if (selectedIds.includes(selectedData.content[coreKey]?.response_text[subKey]?.clusterData.id)) {
+        const deltaX = data.deltaX;
+        const deltaY = data.deltaY;
+
+        setSelectedData((prevState) => {
+            const updatedContent = { ...prevState.content };
+
+            selectedIds.forEach((id) => {
+                const { key, subKey } = findKeyById(id, updatedContent);
+                if (key && subKey !== undefined) {
+                    const item = updatedContent[key].response_text[subKey].clusterData;
+                    const updatedItem = {
+                        ...item,
+                        x: item.x + deltaX,
+                        y: item.y + deltaY,
+                    };
+                    updatedContent[key].response_text[subKey].clusterData = updatedItem;
+                } else if (key) {
+                    const item = updatedContent[key];
+                    const updatedItem = {
+                        ...item,
+                        x: item.x + deltaX,
+                        y: item.y + deltaY,
+                    };
+                    updatedContent[key] = updatedItem;
+                }
+            });
+
+            return { ...prevState, content: updatedContent };
+        });
+    } else {
+        setSelectedData((prevState) => {
+            const updatedContent = { ...prevState.content };
+
+            if (subKey !== undefined && coreKey && updatedContent[coreKey]?.response_text[subKey]?.clusterData) {
+                const updatedSubItem = {
+                    ...updatedContent[coreKey].response_text[subKey].clusterData,
+                    x: data.x,
+                    y: data.y,
+                };
+                updatedContent[coreKey].response_text[subKey].clusterData = updatedSubItem;
+            } else if (coreKey && updatedContent[coreKey]) {
+                const updatedItem = {
+                    ...updatedContent[coreKey],
+                    x: data.x,
+                    y: data.y,
+                };
+                updatedContent[coreKey] = updatedItem;
+            }
+
+            return { ...prevState, content: updatedContent };
+        });
+    }
+};
+
+const toggleSelect = (id) => {
+    setSelectedIds(prev => 
+        prev.includes(id) ? prev.filter(i => i !== id) : [...prev, id]
+    );
+};
+
+
+

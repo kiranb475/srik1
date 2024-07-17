@@ -1,0 +1,65 @@
+.container-activity-3 {
+    height: calc(100vh - 80px);
+    margin: 0px;
+    overflow-y: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px !important;
+    background-color: #f8f8f8;
+    padding: 30px 10vw 30px 10vw !important;
+    font-family: "Lato", sans-serif !important;
+  }
+  
+  .header-activity-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header-activity-3 h2 {
+    min-height: 1 !important;
+    border-right: solid rgba(0, 0, 0, 0) 1px !important;
+    outline: none !important;
+    font-family: "Lato", sans-serif !important;
+  }
+
+.editable-label {
+    min-height: 1;
+    border-right: solid rgba(0, 0, 0, 0) 1px;
+    outline: none;
+}
+
+.reset-button {
+    margin-left: auto;
+}
+
+.reset-button:hover {
+    background-color: transparent;
+}
+
+.editable-instruction,
+.info-text {
+    min-height: 1;
+    border-right: solid rgba(0, 0, 0, 0) 1px;
+    outline: none;
+    font-family: "Lato", sans-serif !important;
+    font-size: 17px !important;
+    margin-top: 10px;
+}
+
+.formControlLabelTop {
+    margin-top: 0;
+}
+
+.content-container {
+    margin-top: 2px;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.submit-button {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}

@@ -1,0 +1,133 @@
+.container-activity-5 {
+    height: calc(100vh - 80px);
+    margin: 0px;
+    overflow-y: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px !important;
+    background-color: #f8f8f8;
+    padding: 30px 10vw 30px 10vw !important;
+    font-family: "Lato", sans-serif !important;
+}
+
+.header-activity-5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-activity-5 h2 {
+    min-height: 1 !important;
+    border-right: solid rgba(0, 0, 0, 0) 1px !important;
+    outline: none !important;
+    font-family: "Lato", sans-serif !important;
+}
+
+
+.editable-label,
+.editable-instruction {
+    min-height: 1;
+    border-right: solid rgba(0, 0, 0, 0) 1px;
+    outline: none;
+    font-family: "Lato", sans-serif;
+}
+
+.editable-instruction {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.info-text {
+    min-height: 1;
+    border-right: solid rgba(0, 0, 0, 0) 1px;
+    outline: none;
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.reset-button {
+    margin-left: auto;
+}
+
+.reset-button:hover {
+    background-color: transparent;
+}
+
+.formControlLabelTop {
+    margin-top: 0;
+}
+
+.submit-button {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#activity-four-container {
+    margin-top: 20px;
+}
+
+#main-container {
+    min-height: 900px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #E6E6FA;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+.draggable-response {
+    width: 200px;
+    height: 100px;
+    border-radius: 15px;
+    border: 1px solid black;
+    overflow: hidden;
+    margin: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.draggable-response-label {
+    max-Width: 200px;
+    max-height: 20px;
+    padding: 10px;
+    margin: 10px;
+    cursor: "move";
+    white-space: "nowrap";
+}
+
+.create-copy-button {
+    padding: 5px !important;
+    min-width: 0px !important;
+    margin-left: auto !important ;
+    width: 10px;
+    height: 10px;
+    border-radius: 50% !important;
+    text-align: center;
+    background-color: #F5F5F4 !important;
+}
+
+.create-delete-button {
+    padding: 5px !important;
+    min-width: 0px !important;
+    width: 10px;
+    margin-left: 2px !important;
+    height: 10px;
+    border-radius: 50% !important;
+    text-align: center;
+    background-color: #F5F5F4 !important;
+}
+
+.draggable-response-label-child {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1px;
+    display: flex;
+    overflow-x: hidden;
+}
